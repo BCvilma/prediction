@@ -9,7 +9,7 @@ st.set_page_config(page_title=" Prediction App", page_icon="🔮", layout="cente
 
 st.title('Prediction App')
 
-data = pd.read_csv("player_rankings_2024.csv")
+data = pd.read_csv("prediction-main/player_rankings_2024.csv")
 data['Value'] = data['Value'].str.replace('$', '', regex=False)
 data['Value'] = data['Value'].str.replace(',', '', regex=False)
 data['Value'] = data['Value'].astype(int)
